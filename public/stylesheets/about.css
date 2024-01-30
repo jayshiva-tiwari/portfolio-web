@@ -1,0 +1,122 @@
+html, body {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 115%;
+    width: auto;
+    opacity: 0;
+}
+
+@media (min-aspect-ratio: 4/3) {
+    img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media (max-aspect-ratio: 3/5) {
+    img {
+        left: 30%;
+    }
+}
+
+.overlay {
+    position: fixed;
+    top: 9%;
+    left: 5%; 
+    width: 40%;
+    /* max-width: 50%; */
+    /* transform: translate(-50%, -50%); */
+    font-family: 'Poppins', sans-serif;
+    font-size: 10vh;
+    /* font-weight: bold; */
+    pointer-events: none;
+    /* text-transform: uppercase; */
+}
+
+.overlay h1 {
+    font-size: 2.5vw;
+    font-weight: 900;
+    font-family: 'Oleo Script', sans-serif;
+    /* background-color: linear-gradient(45deg, #ff357880, #fff17280); */
+    color: #ff8400;
+    
+}
+
+h1 span{
+    color: #f5b000;
+}
+
+
+
+.overlay p {
+    /* width: 50vw; */
+    font-weight: bolder;
+    background-image: linear-gradient(60deg, #000000, #ff7300);
+    background-clip: text;
+    color: transparent;
+    font-size: 1vw;
+}
+
+@media (max-aspect-ratio: 1/1) {
+    .overlay {
+        left: 50%;
+        width: 90%;
+        max-width: 90%;
+    }
+}
+
+@media (max-aspect-ratio: 3/5) {
+    .overlay {
+        font-size: 5vh;
+    }
+}
+
+@media(max-width:600px){
+    .overlay {
+        left: 8%;
+        top: 1%;
+    }
+    .overlay h1{
+        font-size: 6.5vw;
+        color: #dc41df;
+    }
+    .overlay h1 span{
+        color: #bb00ff;
+    }
+    .overlay p {
+        font-size: 4vw;
+        background-image: linear-gradient(60deg, #d02ed3, #e52a84);
+    background-clip: text;
+    color: transparent;
+        /* color: #d3a123; */
+    }
+    .overlay p span{
+        background-image: linear-gradient(60deg, #d429d6, #dd3385);
+    background-clip: text;
+    color: transparent;
+    }
+}

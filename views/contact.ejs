@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>shiva-portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="https://i.pinimg.com/originals/e7/5b/93/e75b936e2348fc901354073526dada2f.gif"
+    type="image/x-icon" />
+  <link rel="stylesheet" href="/stylesheets/contact.css" />
+</head>
+
+<body>
+  <!--ring div starts here-->
+  <div class="ring">
+    <img src="https://i.pinimg.com/236x/82/f3/fb/82f3fb4d8b4f985948079f3cbde8ac49.jpg  " alt="" />
+    <div class="rings">
+      <i style="--clr: #00ff0a"></i>
+      <i style="--clr: #ff0057"></i>
+      <i style="--clr: #fffd44"></i>
+    </div>
+    <div class="login">
+      <h1>
+        <a href="http://localhost:3000/shiva-portfolio">Let's Get In Touch</a>
+      </h1>
+      <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+        <input type="hidden" name="access_key" value="7864ba33-6a84-40d6-8464-89df68edec93" />
+
+        <input  class="inputBx info" type="text" name="name" placeholder="Username" autocomplete="off" value=""
+          required />
+
+        <input  class="inputBx info" type="text" name="number" placeholder="Mobile number" value="" required />
+
+        <input  class="inputBx info" type="email" name="email" placeholder="Email" required />
+
+        <textarea id="msgtxt" class="form-control" rows="10" placeholder="Message" name="message" required></textarea>
+
+        <button id="sudbtn" class="custom-btn btn-16 inputBx" type="submit" value="SEND">
+          submit
+        </button>
+        <div class="links">
+          <ul class="social-media-list">
+            <li>
+              <a href="https://github.com/jayshiva-tiwari" class="contact-icon">
+                <i class="fa-brands fa-github"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/smile_g.99/" class="contact-icon">
+                <i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/shiva-tiwari-6a3259299/" class="contact-icon">
+                <i class="fa-brands fa-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- <script src="script.js"></script> -->
+  <!--ring div ends here-->
+</body>
+
+</html>
